@@ -24,7 +24,7 @@ In order to compare and train a classifier on the `UA` and `FS` data we need to 
 The tessellations can be created with GeoL's `create_grid.py` script as such:
 
 ```python
-python GeoL/create_grid.py -a $CITY_NAME -b $OUTPUT_CITY_SHAPE -o $BASE_DIR_TESSELLATION  -v 2 -s $SIZE -m -t square
+python GeoL/create_grid.py -a CITY_NAME -b OUTPUT_CITY_SHAPE -o BASE_DIR_TESSELLATION  -v 2 -s SIZE -m -t square
 ```
 
 Note that the script doesn't require a shapefile in input to tessellate as it automatically can retrieve the administrative boundaries of a city through _OpenStreetMap's Nominatim API_. The polygon is digested as a `GeoPandas Dataframe`.
@@ -48,7 +48,7 @@ The actual mapping of ground features (e.g. Urban Atlas polygons and Foursquare 
 The first script produces a `spatial join` (i.e. [a join based on the spatial location](http://wiki.gis.com/wiki/index.php/Spatial_Join)) between each cell and the corresponding features that it encompasses.
 
 ```python
-python mapping.py -g $INPUT_DIR -d $FOURSQUARE_RAW_DATA -o $FOURSQUARE_TESSELLATION_NAME -n "latitude longitude"
+python mapping.py -g INPUT_DIR -d FOURSQUARE_RAW_DATA -o FOURSQUARE_TESSELLATION_NAME -n "latitude longitude"
 ```
 
 The second script takes in input the mapped tessellation and produces a summary of the underlying features contained in each cell. For Foursquare data this simply means a straightforward count, while for Urban Atlas the script produces a percentage of land-use coverage for each class.
