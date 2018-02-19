@@ -8,18 +8,21 @@ This repo contains the code to reproduce all the experiments described in the pa
 pip install -r requirements.txt
 ```
 
-* To run the experiments you will need HPK. We implemented HPK as an additional kernel in [Kelp](https://github.com/SAG-KeLP/), a java machine learning framework focusing on kernel machines for structured data.
+* To run the experiments you will need HPK. We implemented HPK as an additional kernel in [Kelp](https://github.com/SAG-KeLP/), a java machine learning framework focusing on kernel machines for structured data. HPK can be installed with the provided `kelp-classify.jar` file.
 
 ## Project Structure
 
 The project is organised as follows:
 
-* `GeoL` = The Geospatial Library developed for running menial and generic data cleaning and pre-processing tasks when using geographic data for Machine Learning.
+* `GeoL` = The [Geospatial Library](https://github.com/gbarlacchi/GeoL) developed for running generic data cleaning and pre-processing tasks when using geographic data with Machine Learning.
 
-* `notebooks` = This folder contains two notebooks used to prepare and then run the experiments on the Urban Atlas and Foursquare datasets respectively.
+* `notebooks` = This folder contains the notebooks used to prepare and run the experiments. There are three notebooks: two for pre-processing respectively the Urban Atlas and Foursquare datasets, and a third one to run the experiments which should be run last.
 
 * `scripts` = Simple Python executables to perform generic operations (e.g. prepare the folder structure etc...)
 
 #### A note on the datasets:
 
-Due to legal constrains, we could not provide the data as they are. Both Urban Atlas and Foursquare require in fact a registration and forbid a straightforward re-use. They can both be freely downloaded at their respective websites.
+Due to legal constrains, we could not provide the data as they are. Both Urban Atlas and Foursquare require in fact a registration and forbid a straightforward re-use.
+
+* Urban Atlas can be freely downloaded through [its portal](https://land.copernicus.eu/local/urban-atlas/urban-atlas-2012).
+* Foursquare data can be retrieved using GeoL's crawler. It requires an appropriate API key.
