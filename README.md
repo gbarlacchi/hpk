@@ -2,9 +2,9 @@ This repo contains the code to reproduce all the experiments described in the pa
 
 ## Requirements
 
-Install a Python Virtual Environment using python>=3.3. Then install the required packages from the provided `requirements.txt` 
+* Install a Python Virtual Environment using python>=3.3. Then install the required packages from the provided `requirements.txt`
 
-- JAVA???
+* To run the experiments you will need HPK. We implemented HPK as an additional kernel in [Kelp](https://github.com/SAG-KeLP/), a java machine learning framework focusing on kernel machines for structured data.
 
 ```python
 pip install -r requirements.txt
