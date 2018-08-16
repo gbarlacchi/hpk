@@ -1,4 +1,4 @@
-This repo contains the code to reproduce all the experiments described in the paper `Hierarchical Point-Of-Interest Kernels for Analysis andClassification of Urban Areas (Barlacchi et al., 2018)` submitted for the Research Track at [KDD](http://www.kdd.org/kdd2018/).
+This repo contains the code to reproduce all the experiments described in the paper `Hierarchical Point-Of-Interest Kernels for Analysis andClassification of Urban Areas` submitted at WSDM 2019.
 
 ## Requirements
 
