@@ -1,4 +1,4 @@
-This repo contains the code to reproduce all the experiments described in the paper `Hierarchical Point-Of-Interest Kernels for Analysis andClassification of Urban Areas` submitted at WSDM 2019.
+This repo contains the code to work with the `Hierarchical Point-Of-Interest Kernels`.
 
 ## Requirements
 
